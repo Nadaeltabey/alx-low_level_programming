@@ -9,17 +9,13 @@ int main(void)
 {
 int i = '0';
 
-while (i <= '9')
-{
-putchar(i);
 while (i < '9')
 {
+putchar(i);
 putchar(',');
 putchar(' ');
 i++;
 }
-i++;
-}
-putchar('\n');
+putchar('9');
 return (0);
 }
