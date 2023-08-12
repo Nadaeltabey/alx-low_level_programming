@@ -11,7 +11,8 @@ char alphabet = 'a';
 
 while (alphabet <= 'z')
 {
-if (!(alphabet == 'e' && alphabet == 'q'))
+if (alphabet == 'e' || alphabet == 'q'){
+continue;}
 putchar(alphabet);
 alphabet++;
 }
