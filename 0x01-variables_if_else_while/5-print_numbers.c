@@ -7,10 +7,10 @@
 int main(void)
 
 {
-        double i = '0';
+        int i = '0';
 
         while (i <= '9')
-{               printf("%f", i);
+{               printf("%d", i);
         i++;
 }
 printf("\n");
