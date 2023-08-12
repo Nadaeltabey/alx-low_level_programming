@@ -11,7 +11,6 @@ int i = '0';
 
 while (i <= '9')
 {
-putchar(i);
 while (i <= '9')
 {
 putchar(i);
