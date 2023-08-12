@@ -9,11 +9,11 @@ int main(void)
 	char (alphabet);
 	char (Alphabet);
 
-	if (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	if (alphabet = 'a')alphabet <= 'z'; alphabet++;
 	{
 		putchar(alphabet);
 	}
-	if (Alphabet = 'A'; Alphabet <= 'Z'; Alphabet++)
+	if (Alphabet = 'A')Alphabet <= 'Z'; Alphabet++;
 	{
 	 	putchar(Alphabet);
 	}
