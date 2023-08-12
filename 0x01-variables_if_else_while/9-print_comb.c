@@ -13,7 +13,6 @@ while (i <= '9')
 {
 putchar(i);
 putchar(',');
-putchar(' ');
 while (i <= '9')
 {
 putchar(i);
