@@ -14,12 +14,12 @@ while (i <= '9')
 while (i <= '9')
 {
 putchar(i);
-putchar(',');
-putchar(' ');
 i++;;
 }
 i++;
 }
+putchar(',');
+putchar(' ');
 putchar('\n');
 return (0);
 }
