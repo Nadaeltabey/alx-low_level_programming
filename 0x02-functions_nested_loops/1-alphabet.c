@@ -6,6 +6,7 @@ void print_alphabet(void)
  *
  * Return: Always 0.
  */
+
 {
 int i = 'a';
 while (i <= 'z')
