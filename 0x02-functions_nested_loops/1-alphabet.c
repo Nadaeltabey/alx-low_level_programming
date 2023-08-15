@@ -1,14 +1,9 @@
 #include"main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ *prints the alphabet in lowercase from a to z
  */
 void print_alphabet(void)
 
-/**
- *prints the alphabet, in lowercase
- */
 {
 int i = 'a';
 while (i <= 'z')
