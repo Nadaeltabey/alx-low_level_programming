@@ -6,9 +6,7 @@
  *
  *Return:  1 (Success) and 0 (failure)
 */
-int print_last_digit(int)
+int print_last_digit(int n)
 {
-n, d;
-d = n % 10;
-_putchar(d);
+return (n % 10);
 }

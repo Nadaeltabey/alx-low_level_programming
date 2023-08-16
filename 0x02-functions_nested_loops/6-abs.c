@@ -6,15 +6,7 @@
  *
  *Return:  1 (Success) and 0 (failure)
 */
-int _abs(int)
-
+int _abs(int n)
 {
-if (int >= 0)
-{
-_putchar(int);
-}
-else
-{
-_putchar(-int);
-}
+_abs(n);
 }
