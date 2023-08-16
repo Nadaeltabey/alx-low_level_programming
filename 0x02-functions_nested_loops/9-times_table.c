@@ -8,7 +8,7 @@
 */
 void times_table(void)
 {
-float m = 0, n, y;
+char m = 0, n, y;
 while (m <= 9)
 {
 n = 0;
