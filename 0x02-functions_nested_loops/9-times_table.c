@@ -8,13 +8,14 @@
 */
 void times_table(void)
 {
-int m = 0,  n;
+int m = 0,  n, y;
 while (m >= 0 && m <= 9)
 {
 n = 0;
 while (n >= 0 && n <= 9)
 {
-_putchar(n * m);
+y = n * m;
+_putchar(y);
 _putchar(',');
 _putchar(' ');
 n++;
