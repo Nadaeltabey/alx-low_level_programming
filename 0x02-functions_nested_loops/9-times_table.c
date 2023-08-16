@@ -16,14 +16,24 @@ while (n <= 9)
 {
 y =  n * m;
 _putchar(y + '0');
-if (n >= 0 && n < 9)
+if (n < 9)
+{
+else if (y <= 9)
+{
+_putchar(y + '0');
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
+else if (y >= 10)
+_putchar((y / 10) + '0');
+_putchar((y % 10) + '0');
+_putchar(',');
+_putchar(' ');
+}
+}
 n++;
 }
 _putchar('\n');
 m++;
 }
-
 }

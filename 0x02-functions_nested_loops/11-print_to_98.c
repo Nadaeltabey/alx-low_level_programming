@@ -1,8 +1,8 @@
 #include"main.h"
 
 /**
- * print_last_digit  - function to give the last
- * digit of a number
+ * print_to_98  - function to give the 
+ * number to 98
  *
  *Return:  1 (Success) and 0 (failure)
 */
