@@ -1,8 +1,8 @@
 #include"main.h"
 
 /**
- * print_last_digit  - function to give the last
- * digit of a number
+ * jack_bauer  - function to give the hours
+ * and the minutes
  *
  *Return:  1 (Success) and 0 (failure)
 */
