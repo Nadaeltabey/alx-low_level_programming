@@ -9,6 +9,12 @@
 int _abs(int)
 
 {
-int x = -1, y
-y = _abs(x);
+if (int >= 0)
+{
+_putchar(int);
+}
+else
+{
+_putchar(-int);
+}
 }
