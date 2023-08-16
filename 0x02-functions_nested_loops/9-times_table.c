@@ -15,7 +15,7 @@ n = 0;
 while (n >= 0 && n <= 9)
 {
 y = n * m;
-_putchar(y);
+_putchar(y + '0');
 _putchar(',');
 _putchar(' ');
 n++;
