@@ -1,9 +1,8 @@
 #include"main.h"
 
 /**
- * more_numbers  - function to give the
- * numbers
- *
+ * more_numbers - function to give the
+ * numbers until fourteen ten times
  *
  *Return:  1 (Success) and 0 (failure)
 */
