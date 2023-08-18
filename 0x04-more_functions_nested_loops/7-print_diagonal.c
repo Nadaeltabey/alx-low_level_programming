@@ -1,8 +1,8 @@
 #include"main.h"
 
 /**
- * print_line - function to give
- * a straight line
+ * print_diagonal - function to give
+ * a diagonal
  * @n: operand
  *Return:  1 (Success) and 0 (failure)
 */
@@ -16,19 +16,21 @@ int i, j;
 	}
 	else
 	{
-		for (i=1; i<=n; i++)
-		{
-				if  (i >= 2)
-				{
-				for (j=1; j<i; j++)
-				{
-				_putchar(' ');
-				}
-				}	
-			_putchar('\\');
-			if (i < n)
-			_putchar('\n');
-			}
+	for (i = 1; i <= n; i++)
+	{
+	if  (i >= 2)
+	{
+	for (j = 1; j < i; j++)
+	{
+	_putchar(' ');
+	}
+	}
+	_putchar('\\');
+	if (i < n)
+	{
+	_putchar('\n');
+	}
+	}
 	 _putchar('\n');
 	}
 }
