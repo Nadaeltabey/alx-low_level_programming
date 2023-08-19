@@ -14,7 +14,6 @@ while (n <= 98)
 {
 _putchar(n + '0');
 if (n < 98)
-{
 _putchar(',');
 _putchar(' ');
 }
@@ -23,7 +22,7 @@ n++;
 }
 else
 {
-while (n >= 98)
+while (n > 98)
 {
 	_putchar(n + '0');
 	if (n > 98)
