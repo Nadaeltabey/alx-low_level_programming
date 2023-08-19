@@ -1,20 +1,19 @@
 #include"main.h"
 
 /**
- * _abs  - function to give the positive 
+ * _abs  - function to give the positive
  * of any number
- *
+ *@r : operand
  *Return:  1 (Success) and 0 (failure)
 */
-int _abs(int n)
-int m;
+int _abs(int r)
 {
-if (n >= 0)
+if (r >= 0)
 {
-_putchar(n + 0);
+return (r);
 }
 else
 {
-m = n * -1;
-_putchar(m + 0);
+return (-r);
+}
 }
