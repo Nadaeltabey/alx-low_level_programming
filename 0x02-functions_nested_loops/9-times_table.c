@@ -8,32 +8,33 @@
 */
 void times_table(void)
 {
-char m = 0, n, y;
-while (m <= 9)
+int m, n, y, f, l;
+for (m=0; m<=9; m++)
 {
-n = 0;
-while (n <= 9)
-{
-y =  n * m;
-_putchar(y + '0');
-if (n < 9)
-{
-else if (y <= 9)
-{
-_putchar(y + '0');
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-else if (y >= 10)
-_putchar((y / 10) + '0');
-_putchar((y % 10) + '0');
-_putchar(',');
-_putchar(' ');
-}
-}
-n++;
-}
+	for (n=0; n<=9; n++)
+	{
+		y = n * m;
+		if (n == 0)
+		{
+			_putchar('0');
+		}
+		else if (y <= 9)
+		{
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(',');
+		_putchar(y + '0');
+		}
+		else
+		{
+		_putchar(' ');
+		_putchar(',');
+		f = (y / 10);
+		l = (y % 10);
+		_putchar(f + '0');
+		_putchar(l + '0');
+		}
+	}
 _putchar('\n');
-m++;
 }
 }
