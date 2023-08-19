@@ -37,4 +37,5 @@ for (m = 0; m <= 9; m++)
 	}
 _putchar('\n');
 }
+_putchar('\n');
 }
