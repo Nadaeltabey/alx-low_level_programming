@@ -20,15 +20,15 @@ for (m = 0; m <= 9; m++)
 		}
 		else if (y <= 9)
 		{
-		_putchar(' ');
-		_putchar(' ');
 		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
 		_putchar(y + '0');
 		}
 		else
 		{
-		_putchar(' ');
 		_putchar(',');
+		_putchar(' ');
 		f = (y / 10);
 		l = (y % 10);
 		_putchar(f + '0');
@@ -37,5 +37,4 @@ for (m = 0; m <= 9; m++)
 	}
 _putchar('\n');
 }
-_putchar('\n');
 }
