@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * times_table  - function to give the 
+ * times_table - function to give the
  * time table
  *
  *Return:  1 (Success) and 0 (failure)
@@ -9,9 +9,9 @@
 void times_table(void)
 {
 int m, n, y, f, l;
-for (m=0; m<=9; m++)
+for (m = 0; m <= 9; m++)
 {
-	for (n=0; n<=9; n++)
+	for (n = 0; n <= 9; n++)
 	{
 		y = n * m;
 		if (n == 0)
