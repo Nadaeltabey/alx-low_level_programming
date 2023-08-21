@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - function to give
- * a diagonal
+ * a value
  * @n: operand
  *
  *Return:  1 (Success) and 0 (failure)
