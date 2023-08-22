@@ -16,7 +16,7 @@ while (s[c] != '\0')
 {
 c++;
 }
-for (i = 0; i > c; i++)
+for (i = 0; i < c; i++)
 {
 c--;
 str = s[i];
