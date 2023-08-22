@@ -19,7 +19,7 @@ c++;
 
 for (i = 0; i < c; i++)
 {
-src[i] = dest[i];
+dest[i] = src[i];
 }
 dest[c] = '\0';
 return (dest);
