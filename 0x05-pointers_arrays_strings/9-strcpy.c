@@ -1,22 +1,26 @@
 #include"main.h"
 
 /**
- * _puts - function to give
+ * *_strcpy - function to copy
  * a string
- * @str: operand
+ * @src: operand
+ * @dest: operand
  *Return:  1 (Success) and 0 (failure)
 */
 char *_strcpy(char *dest, char *src)
 {
-int c = 0, i;
+int c = 0;
+int i;
 
-while (*src != '\0')
-{ 
-c++;
-src++;
-}
-for (i = 0; src[i] <= '\0'; i++)
+while (*(src + c) != '\0')
 {
-src[i] == dest[i];
+c++;
 }
+
+for (i = 0; i < c; i++)
+{
+src[i] = dest[i];
+}
+dest[c] = '\0';
+return (dest);
 }
