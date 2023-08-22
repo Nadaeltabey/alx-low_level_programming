@@ -8,9 +8,10 @@
 */
 void puts2(char *str)
 {
-while (*str != '\0')
-{ _putchar(*str);
-str = str + 2;
+int i = 0;
+while (str[i] != '\0')
+{ _putchar(str[i]);
+str = i + 2;
 }
 _putchar('\n');
 }
