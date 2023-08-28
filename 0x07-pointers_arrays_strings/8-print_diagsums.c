@@ -20,6 +20,6 @@ for (i = 0; i < size; i++)
 	sum1 = sum1 + a[size - i - 1];
 	a = a + size;
 }
-	printf ("%d, ", sum);
-	printf ("%d\n", sum1);
+	printf("%d, ", sum);
+	printf("%d\n", sum1);
 }
