@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * *_strcat - function to give
- * a cat
- * @src: operand
- * @dest: operand
+ * *_memset - function to give
+ * a mem
+ * @s: operand
+ * @b: operand
+ * @n: operand
  *Return:  1 (Success) and 0 (failure)
 */
 char *_memset(char *s, char b, unsigned int n)
