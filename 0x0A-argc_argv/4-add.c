@@ -10,21 +10,25 @@
  */
 int main(int argc, char *argv[])
 {
-int sum = 0;
-char *p;
+int i, sum = 0;
 
-while (--argc)
+if (argc == 0 || argc == 1)
 {
-for (p = argv[argc]; *p; p++)
+printf("0\n");
+return (0);
+}
+else
 {
-if (*p < '0' && *p > '9')
+for (i = 1; i < argc; i++)
+{
+if (!atoi(argv[i]))
 {
 printf("Error\n");
 return (1);
 }
-sum = sum + atoi(argv[argc]);
-}
+sum += atoi(argv[i]);
 }
 printf("%d\n", sum);
 return (0);
+}
 }
