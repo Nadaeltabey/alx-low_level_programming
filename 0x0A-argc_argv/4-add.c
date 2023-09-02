@@ -1,6 +1,7 @@
 #include "stdlib.h"
 #include "stdio.h"
-
+#include "stdlib.h"
+#include "string.h"
 /**
  * main - writes th
  * @argc: Th
@@ -10,25 +11,30 @@
  */
 int main(int argc, char *argv[])
 {
-int i, sum = 0;
-
-if (argc == 0 || argc == 1)
-{
-printf("0\n");
-return (0);
-}
-else
+int i;
+unsigned int k, sum = 0;
+char *p;
+if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
-if (!atoi(argv[i]))
-{
-printf("Error\n");
-return (1);
-}
-sum += atoi(argv[i]);
+	p = argv[i];
+	for (k = 0; k < strlen(p); k++)
+	{
+		if (p[k] < 48 || p[k] > 57)
+		{
+			printf("Error\n");
+			return (1);
+		}
+	}
+	sum = sum + atoi(argv[i]);
+	p++;
 }
 printf("%d\n", sum);
-return (0);
 }
+else
+{
+printf("0\n");
+}
+return (0);
 }
