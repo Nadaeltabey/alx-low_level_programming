@@ -27,5 +27,4 @@ for (i = 0; i < m; i++)
 j[i] = str[i];
 }
 return (j);
-free(j);
 }
