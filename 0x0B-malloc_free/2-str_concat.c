@@ -37,7 +37,7 @@ if (j == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < m + k; i++)
+for (i = 0; i <= m + k; i++)
 {
 if (i < m)
 {
