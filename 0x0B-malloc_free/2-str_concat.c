@@ -16,9 +16,13 @@ unsigned int m = 0;
 unsigned int k = 0;
 char *j;
 
-if (s1 == NULL || s2 == NULL)
+if (s1 == NULL)
 {
-return (NULL);
+s1 = '\0';
+}
+if (s2 == NULL)
+{
+s2 = '\0';
 }
 while (s1[m] != '\0')
 {
