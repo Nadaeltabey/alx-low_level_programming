@@ -31,7 +31,7 @@ while (s2[k] != '\0')
 {
 k++;
 }
-j = malloc((m + k + 1)*sizeof(char));
+j = malloc((m + k + 1) * sizeof(char));
 if (j == NULL)
 {
 return (NULL);
