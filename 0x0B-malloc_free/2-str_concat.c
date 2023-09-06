@@ -22,15 +22,15 @@ if (s2 == NULL)
 {
 s2 = '\0';
 }
-while (s1[m] != '\0')
+while (s1[m])
 {
 m++;
 }
-while (s2[k] != '\0')
+while (s2[k])
 {
 k++;
 }
-j = (char *)malloc(m + k *sizeof(char) + 1);
+j = (char *)malloc((m + k *sizeof(char)) + 1);
 if (j == NULL)
 {
 return (NULL);
