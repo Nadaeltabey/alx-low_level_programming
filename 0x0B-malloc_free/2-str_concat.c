@@ -30,7 +30,7 @@ while (s2[k])
 {
 k++;
 }
-j = (char *)malloc((m + k *sizeof(char)) + 1);
+j = (char *)malloc((m + k + 1)*sizeof(char));
 if (j == NULL)
 {
 return (NULL);
