@@ -11,7 +11,7 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-unsigned int i, m = 0, k = 0;
+unsigned int m = 0, k = 0;
 char *j;
 
 if (s1 == NULL)
@@ -35,17 +35,16 @@ if (j == NULL)
 {
 return (NULL);
 }
-for (i = 0; i <= m + k; i++)
+while (s1[m] != '\0')
 {
-if (i < m)
+j[m] = s1[m];
+m++;
+}
+while (s2[k] != '\0')
 {
-j[i] = s1[i];
+j[m] = s2[k];
+m++, k++;
 }
-else
-{
-j[i] = s2[i - m];
-}
-}
-j[i] = '\0';
+j[m] = '\0';
 return (j);
 }
