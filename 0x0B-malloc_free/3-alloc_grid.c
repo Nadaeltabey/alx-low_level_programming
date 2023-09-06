@@ -36,9 +36,9 @@ if (j[i] == NULL)
 while (i--)
 {
 free(j[i]);
+}
 free(j);
 return (NULL);
-}
 }
 for (k = 0; k < width; k++)
 {
