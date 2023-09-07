@@ -26,12 +26,13 @@ while (s2[r] != '\0')
 j = malloc((m + r + 1) * sizeof(char));
 if (j == NULL)
 	return (NULL);
-m = 0, k = 0;
+m = 0;
 while (s1[m] != '\0')
 {
 	j[m] = s1[m];
 	m++;
 }
+k = 0;
 if (n >= r)
 {
 while (s2[k] != '\0')
