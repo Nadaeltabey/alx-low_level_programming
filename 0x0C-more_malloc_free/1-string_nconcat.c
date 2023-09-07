@@ -42,7 +42,7 @@ while (s2[k] != '\0')
 }
 else
 {
-while (k < n && s2[k] != '\0')
+while (k < n)
 {
 	j[m] = s2[k];
 	m++, k++;
