@@ -30,7 +30,7 @@ while (s1[m] != '\0')
 	{j[m] = s1[m];
 	m++; }
 if (n >= r)
-	while (s2[k] != '\0')
+	while (k < r && s2[k] != '\0')
 		{j[m] = s2[k];
 		m++, k++; }
 else
