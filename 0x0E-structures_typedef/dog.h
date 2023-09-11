@@ -9,7 +9,8 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
