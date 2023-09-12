@@ -1,5 +1,9 @@
-#include "stdio.h"
+#include "stdlib.h"
 #include "dog.h"
+
+int _strlen(char *s);
+char *_strcpy(char *dest, char *src);
+dog_t *new_dog(char *name, float age, char *owner);
 
 /**
  * _strlen - function to give
@@ -53,24 +57,24 @@ return (dest);
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *new_dog
+dog_t *new_dog;
 if (!name || !owner || age < 0)
 {
-return (null);
+return (NULL);
 }
-new_dog = (dog_t *)malloc(sizeof(dog_t))
+new_dog = (dog_t *)malloc(sizeof(dog_t));
 if (new_dog == NULL)
 {
 return (NULL);
 }
-new_dog->name = malloc(sizeog(char) * (_strlen(name) + 1))
-if (*new_dog.name == NULL)
+new_dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
+if ((*new_dog).name == NULL)
 {
 free(new_dog);
 return (NULL);
 }
-new_dog->owner = malloc(sizeog(char) * (_strlen(owner) + 1))
-if (*new_dog.owner == NULL)
+new_dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+if ((*new_dog).owner == NULL)
 {
 free(new_dog->owner);
 free(new_dog);
