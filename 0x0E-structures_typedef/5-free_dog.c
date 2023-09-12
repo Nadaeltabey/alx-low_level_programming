@@ -2,9 +2,8 @@
 #include"stdlib.h"
 
 /**
- * main - writes th
- * @argc: Th
- * @argv: operand
+ * free_dog - writes th
+ * @d: operand
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
