@@ -1,10 +1,6 @@
 #include "stdlib.h"
 #include "dog.h"
 
-int _strlen(char *s);
-char *_strcpy(char *dest, char *src);
-dog_t *new_dog(char *name, float age, char *owner);
-
 /**
  * _strlen - function to give
  * alength
