@@ -16,10 +16,10 @@ int _strlen(char *s)
 int c = 0;
 while (*s != '\0')
 {
-        c++;
-        s++;
+c++;
+s++;
 }
-        return (c);
+return (c);
 }
 
 /**
@@ -48,11 +48,11 @@ return (dest);
 }
 
 /**
- * dog_t - writes th
  * new_dog - new
  * @name: Th
  * @age: operand
  * @owner: On success 1.
+ * * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 dog_t *new_dog(char *name, float age, char *owner)
