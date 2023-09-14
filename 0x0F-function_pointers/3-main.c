@@ -2,10 +2,9 @@
 #include "stdio.h"
 #include "stdlib.h"
 /**
- * array_iterator - writes th
- * @array: Th
- * @size: operand
- * @action: operand
+ * main - writes th
+ * @argc: Th
+ * @argv: operand
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -23,7 +22,7 @@ if (!op_func)
 	printf("Error\n"), exit(99);
 if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
 	printf("Error\n"), exit(100);
-printf("%d\n", op_func(a , b));
+printf("%d\n", op_func(a, b));
 return (0);
 
 }
