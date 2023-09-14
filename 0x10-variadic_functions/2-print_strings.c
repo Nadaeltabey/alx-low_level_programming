@@ -14,11 +14,6 @@ va_list args;
 unsigned int i;
 char *y;
 
-if (!n)
-{
-	printf("\n");
-	return;
-}
 va_start(args, n);
 for (i = 0; i < n; i++)
 {
@@ -33,8 +28,13 @@ for (i = 0; i < n; i++)
 	}
 	else
 	{
-	printf("nil");
+		printf("nil");
+		if (separator && i < n - 1)
+                {
+                        printf("%s", separator);
+                }
 	}
 }
 va_end(args);
+printf("\n");
 }
