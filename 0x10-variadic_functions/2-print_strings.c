@@ -30,9 +30,9 @@ for (i = 0; i < n; i++)
 	{
 		printf("nil");
 		if (separator && i < n - 1)
-                {
-                        printf("%s", separator);
-                }
+		{
+			printf("%s", separator);
+		}
 	}
 }
 va_end(args);
