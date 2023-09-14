@@ -20,7 +20,7 @@ for (i = 0; i < n; i++)
 	y = va_arg(args, char *);
 	if (y == NULL)
 	{
-		printf("nil");
+		printf("(nil)");
 	}
 	else
 	{
@@ -31,6 +31,6 @@ for (i = 0; i < n; i++)
 		printf("%s", separator);
 	}
 }
-va_end(args);
 printf("\n");
+va_end(args);
 }
