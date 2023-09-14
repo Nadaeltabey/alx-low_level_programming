@@ -17,10 +17,10 @@ va_start(args, n);
 for (i = 0; i < n; i++)
 {
 	y = va_arg(args, int);
-	printf("%d",y);
+	printf("%d", y);
 	if (separator && i < n - 1)
 	{
-	printf("%s",separator);
+	printf("%s", separator);
 	}
 }
 va_end(args);
