@@ -14,10 +14,10 @@ if (n)
 va_list args;
 unsigned int i, sum;
 
-va_start (args, n);
+va_start(args, n);
 for (i = 0; i < n; i++)
-	sum += va_arg (args, int);
-va_end (args);
+	sum += va_arg(args, int);
+va_end(args);
 return (sum);
 }
 else
