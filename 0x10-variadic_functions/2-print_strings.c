@@ -14,6 +14,10 @@ va_list args;
 unsigned int i;
 char *y;
 
+if (!n)
+{
+	printf("\n");
+}
 va_start(args, n);
 for (i = 0; i < n; i++)
 {
@@ -32,5 +36,4 @@ for (i = 0; i < n; i++)
 	}
 }
 va_end(args);
-printf("\n");
 }
