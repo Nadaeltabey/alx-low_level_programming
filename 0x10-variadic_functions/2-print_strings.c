@@ -2,7 +2,7 @@
 #include "stdio.h"
 #include "stdarg.h"
 /**
- * print_stringss - writes th
+ * print_strings - writes th
  * @n: Th
  * @separator: operand
  * Return: On success 1.
@@ -17,18 +17,18 @@ char *y;
 va_start(args, n);
 for (i = 0; i < n; i++)
 {
-        y = va_arg(args, char *);
+	y = va_arg(args, char *);
 	if (y)
 	{
-        	printf("%s", y);
-        	if (separator && i < n - 1)
-        	{
-        	printf("%s", separator);
-        	}
+		printf("%s", y);
+		if (separator && i < n - 1)
+		{
+			printf("%s", separator);
+		}
 	}
 	else
 	{
-	printf ("nil");
+	printf("nil");
 	}
 }
 va_end(args);
