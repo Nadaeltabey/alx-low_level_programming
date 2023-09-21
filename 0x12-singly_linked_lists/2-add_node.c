@@ -3,7 +3,8 @@
 /**
  * _strlen - function to give
  * alength
- * @s: operand
+ * @head: operand
+ * @str: operand
  *Return:  1 (Success) and 0 (failure)
 */
 list_t *add_node(list_t **head, const char *str)
@@ -21,7 +22,7 @@ return (NULL);
 }
 new->str = strdup(str);
 new->len = c;
-new->next = *head;
-*head = new;
+new->next = (*head);
+(*head) = new;
 return (*head);
 }
