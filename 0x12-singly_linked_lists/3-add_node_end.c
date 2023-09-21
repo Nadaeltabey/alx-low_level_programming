@@ -21,15 +21,15 @@ if (!new)
 {
 return (NULL);
 }
-if (*head == NULL)
-{
-*head = new;
-return (new);
-}
 new->str = strdup(str);
 new->len = c;
-new->next = (NULL);
-while (ptr->next != NULL)
+new->next = NULL;
+if (*head == NULL)
+{
+	*head = new;
+	return (new);
+}
+while (ptr->next)
 {
 ptr = ptr->next;
 }
