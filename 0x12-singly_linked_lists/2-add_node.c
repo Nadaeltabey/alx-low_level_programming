@@ -25,29 +25,3 @@ new->next = (*head);
 (*head) = new;
 return (*head);
 }
-
-
-/**
-list_t *new;
-unsigned int c = 0;
-while (str[c])
-{
-c++;
-}
-new = malloc(sizeof(list_t));
-if (!new || !head)
-{
-return (NULL);
-}
-new->str = strdup(str);
-if (!new->str)
-{
-free(new);
-return (NULL);
-}
-new->len = c;
-new->next = (*head);
-(*head) = new;
-return (*head);
-}
-*/
