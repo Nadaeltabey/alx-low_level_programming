@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * _strlen - function to give
+ * add_node_end - function to give
  * alength
  * @head: operand
  * @str: operand
@@ -9,24 +9,24 @@
 */
 list_t *add_node_end(list_t **head, const char *str)
 {
+int c = 0;
 list_t *new, *ptr;
 ptr = *head;
-unsigned int c = 0;
 while (str[c])
 {
 c++;
 }
 new = malloc(sizeof(list_t));
-if (!new || !head)
+if (!new)
 {
 return (NULL);
+}
+if (*head == NULL)
+{
+*head = new;
+return (new);
 }
 new->str = strdup(str);
-if (!new->str)
-{
-free(new);
-return (NULL);
-}
 new->len = c;
 new->next = (NULL);
 while (ptr->next != NULL)
@@ -34,4 +34,5 @@ while (ptr->next != NULL)
 ptr = ptr->next;
 }
 ptr->next = new;
+return (new);
 }
