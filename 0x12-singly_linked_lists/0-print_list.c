@@ -11,16 +11,15 @@ int _strlen(char *s)
 int c = 0;
 while (*s != '\0')
 {
-        c++;
-        s++;
+	c++;
+	s++;
 }
-        return (c);
+	return (c);
 }
 
 /**
- * print_strings - writes th
- * @n: Th
- * @separator: operand
+ * print_list - writes th
+ * @h: Th
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
