@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * list-len - writes th
+ * list_len - writes th
  * @h: Th
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
