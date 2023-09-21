@@ -1,5 +1,12 @@
 #include "lists.h"
 
+/**
+ * print_list - singly linked list
+ * @h: string - (malloc'ed string)
+ *
+ * Description: singly linked list node structure
+ * * Return: On success 1
+ */
 size_t print_list(const list_t *h)
 {
 size_t count;
