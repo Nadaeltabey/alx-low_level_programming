@@ -9,10 +9,11 @@
 int _strlen(char *s)
 {
 int c = 0;
-while (*s != '\0')
+if (!s)
+	return (0);
+while (*s++)
 {
 	c++;
-	s++;
 }
 	return (c);
 }
@@ -26,16 +27,9 @@ while (*s != '\0')
 size_t print_list(const list_t *h)
 {
 size_t count = 0;
-while (h != NULL)
+while (h)
 {
-if (h->str == NULL)
-{
-	printf("[0] (nil)\n");
-}
-else
-{
-printf("[%d]%s\n", _strlen(h->str), h->str);
-}
+printf("[%d]%s\n", _strlen(h->str), h->str ? h->str : "(nil)");
 h = h->next;
 count++;
 }
