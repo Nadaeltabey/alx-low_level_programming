@@ -16,16 +16,11 @@ while (str[c])
 c++;
 }
 new = malloc(sizeof(list_t));
-if (!new || !head)
+if (!new)
 {
 return (NULL);
 }
 new->str = strdup(str);
-if (!new->str)
-{
-free(new);
-return (NULL);
-}
 new->len = c;
 new->next = (*head);
 (*head) = new;
