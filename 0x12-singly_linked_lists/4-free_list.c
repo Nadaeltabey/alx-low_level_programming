@@ -1,10 +1,9 @@
 #include "lists.h"
 
 /**
- * add_node_end - function to give
+ * free_list - function to give
  * alength
  * @head: operand
- * @str: operand
  *Return:  1 (Success) and 0 (failure)
 */
 void free_list(list_t *head)
