@@ -1,4 +1,7 @@
 #include "lists.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
 /**
  * print_listint - writes th
  * @h: Th
@@ -12,7 +15,7 @@ while (h)
 {
 	if (h->n)
 	{
-		printf("%d\n", n)
+		printf("%d\n", h->n);
 		h = h->next;	
 	}
 c++;
