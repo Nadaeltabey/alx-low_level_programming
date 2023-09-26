@@ -14,17 +14,16 @@ if (!ptr)
 	return (NULL);
 ptr->next = NULL;
 ptr->n = n;
-temp = *head;
 if (*head == NULL)
 {
 	*head = ptr;
 }
 else
 {
-temp = *head
+temp = *head;
 while (temp->next != NULL)
 	temp = temp->next;
 temp->next = ptr;
 }
-return ptr;
+return (ptr);
 }
