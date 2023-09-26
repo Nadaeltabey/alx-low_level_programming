@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
- * list_len - writes th
- * @h: Th
+ * pop_listint - writes th
+ * @head: Th
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -15,6 +15,6 @@ s = (*head)->n;
 temp = (*head);
 (*head) = (*head)->next;
 free(temp);
-return s;
+return (s);
 }
 
