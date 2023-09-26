@@ -11,10 +11,10 @@ listint_t *temp;
 int s;
 if (!(*head) || !head)
 	return (0);
-s = *head->n;
-temp = *head;
+s = (*head)->n;
+temp = (*head);
 (*head) = (*head)->next;
 free(temp);
-return n;
+return s;
 }
 
