@@ -1,6 +1,5 @@
 #include "lists.h"
 /**
- * list_len - writes th
  * add_nodeint - ghkl
  * @head: Th
  * @n: operand
