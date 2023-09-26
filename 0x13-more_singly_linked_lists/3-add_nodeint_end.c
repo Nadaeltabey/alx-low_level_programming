@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * add_nodeint_end - writes th
- * @h: Th
+ * @head: Th
  * @n: operand
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
