@@ -14,10 +14,10 @@ last = malloc(sizeof(listint_t));
 
 if (!head || !last)
 	return (-1);
-if (!idx)
+if (!index)
 {
 	temp = *head;
-	*head = *head->next;
+	*head = (*head)->next;
 	free(temp);
 	return (1);
 }
