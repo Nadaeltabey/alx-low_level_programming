@@ -12,7 +12,7 @@ unsigned int i = 0;
 listint_t *last, *temp;
 last = malloc(sizeof(listint_t));
 
-if (!head || !last)
+if (!head || (*head))
 	return (-1);
 if (!index)
 {
@@ -34,5 +34,5 @@ while (temp)
 	last = temp;
 	temp = temp->next;
 }
-return (1);
+return (-1);
 }
