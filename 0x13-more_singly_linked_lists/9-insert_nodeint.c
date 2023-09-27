@@ -24,7 +24,7 @@ if (!idx)
 	return (new);
 }
 temp = *head;
-while (node)
+while (temp)
 {
 	if (i == idx - 1)
 	{
