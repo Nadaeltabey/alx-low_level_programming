@@ -1,39 +1,30 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
-/**
- * list_len - writes th
- * @head: Th
- * @idx: operand
- * @n: operand
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
-{
-unsigned int i = 0;
-listint_t *new, *temp;
-new = malloc(sizeof(listint_t));
 
-if (!head || !new)
-	return (NULL);
-new->n = n;
-new->next = NULL;
-if (!idx)
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	new->next = *head;
-	*head = new;
-	returb (new);
-}
-temp = *head;
-while (node)
-{
-	if (i == idx - 1)
-	{
-		new->next = temp->next;
-		temp->next = new;
-		return (new);
-	}
-	i++;
-	temp = temp->next;
-}
-return (NULL);
+    listint_t *head;
+
+    head = NULL;
+    add_nodeint_end(&head, 0);
+    add_nodeint_end(&head, 1);
+    add_nodeint_end(&head, 2);
+    add_nodeint_end(&head, 3);
+    add_nodeint_end(&head, 4);
+    add_nodeint_end(&head, 98);
+    add_nodeint_end(&head, 402);
+    add_nodeint_end(&head, 1024);
+    print_listint(head);
+    printf("-----------------\n");
+    insert_nodeint_at_index(&head, 5, 4096);
+    print_listint(head);
+    free_listint2(&head);
+    return (0);
 }
